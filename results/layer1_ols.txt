@@ -1,0 +1,63 @@
+===== Layer 1 OLS: trough_drop ~ USA_WIND + USA_PRES + USA_RMW + DIST_FROM_PORT  (N=38) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:            trough_drop   R-squared:                       0.233
+Model:                            OLS   Adj. R-squared:                  0.140
+Method:                 Least Squares   F-statistic:                     2.500
+Date:                Thu, 24 Sep 2026   Prob (F-statistic):             0.0614
+Time:                        14:18:42   Log-Likelihood:                -137.77
+No. Observations:                  38   AIC:                             285.5
+Df Residuals:                      33   BIC:                             293.7
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+Intercept        561.9360    236.278      2.378      0.023      81.225    1042.647
+USA_WIND          -0.3240      0.202     -1.603      0.119      -0.735       0.087
+USA_PRES          -0.5254      0.229     -2.295      0.028      -0.991      -0.060
+USA_RMW           -0.0864      0.186     -0.465      0.645      -0.465       0.292
+DIST_FROM_PORT    -0.0056      0.010     -0.568      0.574      -0.026       0.014
+==============================================================================
+Omnibus:                        4.974   Durbin-Watson:                   1.449
+Prob(Omnibus):                  0.083   Jarque-Bera (JB):                4.756
+Skew:                           0.836   Prob(JB):                       0.0927
+Kurtosis:                       2.545   Cond. No.                     1.53e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.53e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+===== Layer 1 OLS: days_to_recover ~ USA_WIND + USA_PRES + USA_RMW + DIST_FROM_PORT  (N=38) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:        days_to_recover   R-squared:                       0.106
+Model:                            OLS   Adj. R-squared:                 -0.002
+Method:                 Least Squares   F-statistic:                    0.9791
+Date:                Thu, 24 Sep 2026   Prob (F-statistic):              0.432
+Time:                        14:18:42   Log-Likelihood:                -59.926
+No. Observations:                  38   AIC:                             129.9
+Df Residuals:                      33   BIC:                             138.0
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+Intercept         27.6050     30.459      0.906      0.371     -34.363      89.573
+USA_WIND          -0.0219      0.026     -0.840      0.407      -0.075       0.031
+USA_PRES          -0.0252      0.030     -0.854      0.399      -0.085       0.035
+USA_RMW            0.0006      0.024      0.026      0.979      -0.048       0.049
+DIST_FROM_PORT     0.0022      0.001      1.702      0.098      -0.000       0.005
+==============================================================================
+Omnibus:                       15.575   Durbin-Watson:                   2.018
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               17.137
+Skew:                           1.414   Prob(JB):                     0.000190
+Kurtosis:                       4.682   Cond. No.                     1.53e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.53e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.

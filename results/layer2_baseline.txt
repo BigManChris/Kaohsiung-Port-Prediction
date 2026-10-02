@@ -1,0 +1,16 @@
+Days in sample:                 2192
+Days with port data:            2192
+Days inside a storm window:     990 (45.2%)
+Days used to fit the baseline:  1202
+
+Weekday seasonal component (median port calls, Mon=0 .. Sun=6):
+weekday
+0    38.0
+1    35.0
+2    37.0
+3    38.0
+4    39.0
+5    35.0
+6    37.0
+
+Residual std on non-storm days (sigma): 6.13 port calls/day

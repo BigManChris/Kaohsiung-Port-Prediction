@@ -1,0 +1,98 @@
+Thresholds: sigma = 6.13 port calls/day; severe = 3.0 sigma = 18.38; moderate = 1.5 sigma = 9.19 for 2+ days
+Onset detected for 29/44 storms; recovery for 29/44
+
+===== Layer 2 OLS: onset_lag ~ USA_WIND + USA_PRES + USA_RMW + DIST_FROM_PORT  (N=26) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              onset_lag   R-squared:                       0.173
+Model:                            OLS   Adj. R-squared:                  0.016
+Method:                 Least Squares   F-statistic:                     1.101
+Date:                Thu, 24 Sep 2026   Prob (F-statistic):              0.382
+Time:                        14:18:42   Log-Likelihood:                -87.257
+No. Observations:                  26   AIC:                             184.5
+Df Residuals:                      21   BIC:                             190.8
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+Intercept        200.2707    208.168      0.962      0.347    -232.638     633.179
+USA_WIND          -0.0570      0.183     -0.312      0.758      -0.436       0.323
+USA_PRES          -0.2110      0.202     -1.047      0.307      -0.630       0.208
+USA_RMW            0.3047      0.193      1.581      0.129      -0.096       0.705
+DIST_FROM_PORT    -0.0002      0.009     -0.018      0.986      -0.019       0.019
+==============================================================================
+Omnibus:                        6.784   Durbin-Watson:                   1.631
+Prob(Omnibus):                  0.034   Jarque-Bera (JB):                4.794
+Skew:                           0.842   Prob(JB):                       0.0910
+Kurtosis:                       4.260   Cond. No.                     1.40e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.4e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+===== Layer 2 OLS: recovery_lag ~ USA_WIND + USA_PRES + USA_RMW + DIST_FROM_PORT  (N=26) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           recovery_lag   R-squared:                       0.183
+Model:                            OLS   Adj. R-squared:                  0.028
+Method:                 Least Squares   F-statistic:                     1.178
+Date:                Thu, 24 Sep 2026   Prob (F-statistic):              0.349
+Time:                        14:18:42   Log-Likelihood:                -86.960
+No. Observations:                  26   AIC:                             183.9
+Df Residuals:                      21   BIC:                             190.2
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+Intercept        218.3113    205.799      1.061      0.301    -209.671     646.294
+USA_WIND          -0.0623      0.180     -0.345      0.733      -0.437       0.313
+USA_PRES          -0.2263      0.199     -1.136      0.269      -0.641       0.188
+USA_RMW            0.3151      0.191      1.654      0.113      -0.081       0.711
+DIST_FROM_PORT    -0.0018      0.009     -0.196      0.846      -0.020       0.017
+==============================================================================
+Omnibus:                        5.783   Durbin-Watson:                   1.713
+Prob(Omnibus):                  0.055   Jarque-Bera (JB):                3.840
+Skew:                           0.744   Prob(JB):                        0.147
+Kurtosis:                       4.153   Cond. No.                     1.40e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.4e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+===== Layer 2 OLS: duration_days ~ USA_WIND + USA_PRES + USA_RMW + DIST_FROM_PORT  (N=26) =====
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          duration_days   R-squared:                       0.111
+Model:                            OLS   Adj. R-squared:                 -0.058
+Method:                 Least Squares   F-statistic:                    0.6572
+Date:                Thu, 24 Sep 2026   Prob (F-statistic):              0.628
+Time:                        14:18:42   Log-Likelihood:                -33.390
+No. Observations:                  26   AIC:                             76.78
+Df Residuals:                      21   BIC:                             83.07
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+Intercept         18.0407     26.221      0.688      0.499     -36.488      72.569
+USA_WIND          -0.0053      0.023     -0.231      0.820      -0.053       0.043
+USA_PRES          -0.0153      0.025     -0.604      0.552      -0.068       0.037
+USA_RMW            0.0104      0.024      0.430      0.671      -0.040       0.061
+DIST_FROM_PORT    -0.0016      0.001     -1.398      0.177      -0.004       0.001
+==============================================================================
+Omnibus:                        0.490   Durbin-Watson:                   1.394
+Prob(Omnibus):                  0.783   Jarque-Bera (JB):                0.515
+Skew:                           0.285   Prob(JB):                        0.773
+Kurtosis:                       2.612   Cond. No.                     1.40e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.4e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
